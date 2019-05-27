@@ -5,8 +5,8 @@ layout: feed
 <feed xmlns="http://www.w3.org/2005/Atom">
  
  <title>Hank Quinlan's Blog</title>
- <link href="visionandy.github.io/blog/atom.xml" rel="self"/>
- <link href="visionandy.github.io/blog"/>
+ <link href="visionandy.github.io/andy/blog/atom.xml" rel="self"/>
+ <link href="visionandy.github.io/andy/blog"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
  <id>http://visionandy.github.io/blog</id>
  <author>
@@ -19,7 +19,7 @@ layout: feed
    <title>{{ post.title }}</title>
    <link href="visionandy.github.io{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>http://visionandy.github.io/{{ post.id }}</id>
+   <id>http://visionandy.github.io/andy/{{ post.id }}</id>
    <content type="html">{{ post.content | xml_escape }}</content>
  </entry>
  {% endfor %}
